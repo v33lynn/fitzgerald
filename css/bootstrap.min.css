@@ -1,0 +1,278 @@
+{
+    outline-style: dotted red 1px;
+}
+
+/*body{
+	outline: dotted red 3px
+	}*/
+/*
+div.container{
+	border: solid blue 2px;
+	align-content: center;
+	}*/
+
+
+	div.jumbotron{
+		
+		background: center;
+	    background: url("picz/shakespeare.jpg");
+	    width: 80%;
+	    height: 100%;
+	    padding: 0 0 0 0;
+	    background-size: cover;
+	    overflow: hidden;
+	    display: inline-block;
+		}
+
+	div.container-fluid {
+		border: solid black;
+		}
+
+
+		div.jumbotron.img-responsive {
+			background-size: cover;
+			}
+
+		div.jumbotron blockquote {
+		    font-family: Rockwell, serif;
+		    font-size: 22px;
+		    font-style: italic;
+		    width: 100%;
+		    padding: 0.35em 40px;
+		    line-height: 1.45;
+		    position: left;
+		    color:#8c96f0;
+			}
+
+		div.jumbotron h1{
+			font-family: lobster;
+			text-align: center;
+			font-size: 50px;
+			color: white;
+			}
+
+			div.jumbotron h2{
+			font-family: lobster;
+			text-align: center;
+			display: inline-block;
+			color: #C0C0C0;
+			}
+
+			div.jumbotron h4{
+			font-family: lobster;
+			text-align: center;
+			display: inline-block;
+			color: white;
+			}
+
+
+		blockquote:before {
+		    display: inline-block;
+		    content: "\201C";
+		    font-size: 80px;
+		    position: left;
+		    left: 20px;
+		    color: #7a7a7a;
+		}
+
+		blockquote cite {
+		    color: white;
+		    font-size: 14px;
+		    display: top right;
+		    margin-top: 5px;
+		}
+
+		blockquote cite:before {
+		    content: "\2014 \2009";
+		} 
+	div.page-header{
+		margin: 0px;
+	}
+
+
+  div.row h3{
+  	font-family: lobster;
+  	font-size: 20px;
+  	margin-top: 0px;
+  	color: white;
+  }
+
+
+/*end of header*/
+
+/*------------Sketches------------------*/
+
+/*#images img {
+    position: absolute;
+    top: 0;
+    left: -400px;
+    z-index: 1;
+    opacity: 0;
+    display: inline-block;
+    transition: all linear 500ms;
+    -o-transition: all linear 500ms;
+    -moz-transition: all linear 500ms;
+    -webkit-transition: all linear 500ms;
+    }*/
+
+    img{
+    	max-width:100%;
+    	height: auto;
+	}
+
+#images img:target {
+    left: 0;
+    z-index: 9;
+    opacity: 1;
+	}
+
+#images img:first-child {
+    left: 0;
+    }
+
+#slider a {
+    text-decoration: none;
+    background: #E3F1FA;
+    border: 1px solid #C6E4F2;
+    padding: 4px 6px;
+    color: #222;
+    }
+#slider a:hover {
+    background: #C6E4F2;
+    }
+
+
+div.footer {
+    width: 100%;
+	}
+
+
+
+/*Contact Page */
+
+
+div.img-circle {
+    border-radius: 60%;
+	}
+
+div.mail h2{
+	font-family: lobster;
+  	font-size: 40px;
+  	margin-top: 0px;
+  	color: white;
+ 	}
+
+*{ margin: 0; padding: 0;}
+
+#clouds{
+	padding: 100px 0;
+	background: #488AC7;
+	background: -webkit-linear-gradient(top, #488AC7 0%, #fff 100%);
+	background: -linear-gradient(top, #488AC7 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #488AC7 0%, #fff 100%);
+}
+
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 100px;
+	top: -55px; left: auto; right: 15px;
+}
+
+
+.x1 {
+	-webkit-animation: moveclouds 12s linear infinite;
+	-moz-animation: moveclouds 12s linear infinite;
+	-o-animation: moveclouds 14s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 220px;
+	
+	-webkit-transform: scale(0.6);S
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 22s linear infinite;
+	-o-animation: moveclouds 24s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.3; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 18s linear infinite;
+	-moz-animation: moveclouds 18s linear infinite;
+	-o-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
